@@ -1,16 +1,34 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import Profile from './Profile'
+import calculator from './calculator'
+
 
 
 const root = document.getElementById('root')
 
-const person = {
-  name:"malik",
-  age: 19,
-  powers: "Batman",
-  car:"Batmobile"
+
+
+let numbers = [0,1,2,3,4,5,6,7,8,9]
+let signs = ['+','=','-','*']
+const Calculate = () => {
+  
+
+  {return(<calculator 
+  numberbuttons={numbers}
+  signbuttons={signs}/>)}
+  
 }
+
+
+
+
+
+// const person = {
+//   name:"malik",
+//   age: 19,
+//   powers: "Batman",
+//   car:"Batmobile"
+// }
 
 // if (person.car){
 //   console.log("hi")
@@ -21,9 +39,5 @@ const person = {
 
 
 
-ReactDOM.render(<Profile 
-name={person.name}
-age={person.age}
-powers={person.powers}
-car={person.car}
+ReactDOM.render(<Calculate
 />,root)
