@@ -1,23 +1,22 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import calculator from './calculator'
-
+import NoteApp from './NoteApp.js'
 
 
 const root = document.getElementById('root')
 
 
 
-let numbers = [0,1,2,3,4,5,6,7,8,9]
-let signs = ['+','=','-','*']
-const Calculate = () => {
+// let numbers = [0,1,2,3,4,5,6,7,8,9]
+// let signs = ['+','=','-','*']
+// const Calculate = () => {
   
 
-  {return(<calculator 
-  numberbuttons={numbers}
-  signbuttons={signs}/>)}
+//   {return(<calculator 
+//   numberbuttons={numbers}
+//   signbuttons={signs}/>)}
   
-}
+// }
 
 
 
@@ -39,5 +38,5 @@ const Calculate = () => {
 
 
 
-ReactDOM.render(<Calculate
+ReactDOM.render(<NoteApp
 />,root)
